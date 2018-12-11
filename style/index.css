@@ -43,15 +43,7 @@ p
 {
     height: 400px;
 
-    background-image: repeating-linear-gradient(90deg, #000 0, #000 30px, #fff 30px, #fff 60px, #000 60px, #000 90px, #fff 90px, #fff 120px);
-    animation: AnimationName 35s ease-in-out infinite;
-    
-    }
-    @keyframes AnimationName {
-      0% { background-position: left }
-      50% { background-position: right }
-      100% { background-position: left }
-    }
+    background: repeating-linear-gradient(90deg, #000 0, #000 30px, #fff 30px, #fff 60px, #000 60px, #000 90px, #fff 90px, #fff 120px);
 
     grid-area: strips;
 }
@@ -120,12 +112,15 @@ footer
 }
 
 footer p {
-  width: 160px;
+  width: 190px;
+  margin-top: 23px;
+  margin-left: 15px;
 
   color: #000;
 
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
 }
 footer img
 {
@@ -172,7 +167,7 @@ footer img
 
         width: 280px;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: -11px;
     }
 
     .name-card
@@ -181,7 +176,7 @@ footer img
 
         width: 180px;
         height: 260px;
-        margin-top: -100px;
+        margin-top: -90px;
 
         grid-column-start: 1;
         grid-column-end: 5;
@@ -190,8 +185,9 @@ footer img
 
     .name-card article h2
     {
-        margin-top: 35px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-bottom: 13px;
+        margin-left: -4px;
 
         color: #000;
 
@@ -202,11 +198,12 @@ footer img
     .name-card article p
     {
         width: 150px;
+        margin-left: -4px;
 
         color: #000;
 
-        font-size: 16px;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 400;
     }
 
     .strips
@@ -324,20 +321,17 @@ footer img
     .inner-card img:first-child
     {
       display: none;
-        /* visibility: hidden; */
     }
 
     .inner-card img:last-child
     {
-        display: grid;
+        display: block;
 
         width: 498px;
         height: 663px;
         margin: 0 auto;
+        margin-top: 60px;
         margin-left: 35%;
-
-        grid-column-start: 2;
-        grid-column-end: 5;
     }
 
     .name-card
@@ -506,3 +500,4 @@ footer img
     margin-top: 200px;
   }
 }
+  
